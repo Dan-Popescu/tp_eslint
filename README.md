@@ -393,3 +393,6 @@ jobs:
 
 ## 6.  Simulation d’un travail d’équipe 
 
+J'ai crée le fichier vide utils.js. J'ai fait un commit et un push et ça n'a pas déclenché la Guthub Action Worflow. 
+Je me suis aperçu que j'ai oublié un s dans .github\workflow.  
+j'ai renommé workflow en workflows.
