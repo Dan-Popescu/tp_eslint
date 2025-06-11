@@ -391,3 +391,5 @@ jobs:
       - run: npm run lint
 ```
 
+## 6.  Simulation d’un travail d’équipe 
+
