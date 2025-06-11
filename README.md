@@ -4,6 +4,7 @@
 
 ### 2.2
 
+```
 popes@LAPTOP-IVJGI2IE MINGW64 /c/ESGI/3A/Outils et pratiques de code/tp_note/tp_eslint_git (main)
 $ npx eslint index.js
 
@@ -19,6 +20,7 @@ C:\ESGI\3A\Outils et pratiques de code\tp_note\tp_eslint_git\index.js
 67:1 error Unexpected 'debugger' statement no-debugger
 
 ✖ 9 problems (9 errors, 0 warnings)
+```
 
 ### 2.3 Correction
 
@@ -36,7 +38,7 @@ husky - pre-commit script failed (code 1)
 
 **J'ai remplacé la commande tests dans package.json pour quelle exécute index avec des vérifications de linter avant de faire le commit**
 
-**J'obtients désormais:**
+**J'obtiens désormais:**
 
 ---
 
@@ -62,6 +64,7 @@ $ npm run lint
 > tp-eslint-git@1.0.0 lint
 > eslint .
 
+```
 Oops! Something went wrong! :(
 
 ESLint: 9.28.0
@@ -77,6 +80,7 @@ at processConfigList (C:\ESGI\3A\Outils et pratiques de code\tp_note\tp_eslint_g
 at defineConfig (C:\ESGI\3A\Outils et pratiques de code\tp_note\tp_eslint_git\node_modules\@eslint\config-helpers\dist\cjs\index.cjs:520:9)
 at file:///C:/ESGI/3A/Outils%20et%20pratiques%20de%20code/tp_note/tp_eslint_git/eslint.config.mjs?mtime=1749653285252:6:16
 at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+```
 
 J'ai modifié la configuration eslintrc.js comme ceci :
 
@@ -97,7 +101,7 @@ module.exports = {
 
 Désormais, quand j'exécute npm run lint, j'ai :
 
-"""
+```
 tp-eslint-git@1.0.0 lint
 
 > eslint .
@@ -277,7 +281,7 @@ C:\ESGI\3A\Outils et pratiques de code\tp_note\tp_eslint_git\index.js
 
 ✖ 167 problems (155 errors, 12 warnings)
 152 errors and 0 warnings potentially fixable with the `--fix` option.
-"""
+```
 
 Ensuite, j'ai exécuté npx eslint . --fix, qui a permis de résoudre plein de problème mais il en reste quelques unes.
 
@@ -397,7 +401,14 @@ J'ai crée le fichier vide utils.js. J'ai fait un commit et un push et ça n'a p
 Je me suis aperçu que j'ai oublié un s dans .github\workflow.  
 j'ai renommé workflow en workflows et supprimé utils.js. J'ai fait un commit. 
 
-![alt text](image-1.png)
+![alt text](assets/image-1.png)
 ![](image.png)
-![alt text](image-2.png)
+![alt text](assets/image-2.png)
 
+J'ai corrigé le problème et retenté un push.
+
+![](assets/image-3.png)
+
+![alt text](assets/image-4.png)
+
+![alt text](assets/image-6.png)
