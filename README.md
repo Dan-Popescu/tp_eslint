@@ -395,4 +395,9 @@ jobs:
 
 J'ai crée le fichier vide utils.js. J'ai fait un commit et un push et ça n'a pas déclenché la Guthub Action Worflow. 
 Je me suis aperçu que j'ai oublié un s dans .github\workflow.  
-j'ai renommé workflow en workflows.
+j'ai renommé workflow en workflows et supprimé utils.js. J'ai fait un commit. 
+
+![alt text](image-1.png)
+![](image.png)
+![alt text](image-2.png)
+
