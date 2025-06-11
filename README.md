@@ -19,4 +19,9 @@ C:\ESGI\3A\Outils et pratiques de code\tp_note\tp_eslint_git\index.js
 
 ✖ 9 problems (9 errors, 0 warnings)
 
-### 2.3 Correction avec npx eslint --fix app.js
+### 2.3 Correction 
+suppression des variables non utiliées
+
+## 3.Intégration avec Git Hooks (Husky) 
+
+
