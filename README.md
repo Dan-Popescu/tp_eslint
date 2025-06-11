@@ -364,3 +364,30 @@ module.exports = {
 
 ```
 pour autoriser les console.log. 
+
+## 5. Mise en place de GitHub Actions 
+
+J'ai crée 2 dossiers imbriqués .github\workflow avec un fichier lint.yml dedans.
+
+Le contenu de ce fichier lint.yml est comme ceci : 
+```
+name: Lint Code
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - run: npm ci
+      
+      - run: npm run lint
+```
+
